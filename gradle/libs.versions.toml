@@ -4,12 +4,15 @@
 compileSdk = "34"
 glanceAppwidget = "1.0.0"
 minSdk = "26"
+retrofit2KotlinxSerializationConverter = "1.0.0"
+retrofitAdaptersResult = "1.0.9"
 targetSdk = "34"
 
 # plugins
 agp = "8.1.2"
 org-jetbrains-kotlin-android = "1.9.10"
 kotlin-serialization-json = "1.6.3"
+ksp = "1.9.22-1.0.17"
 
 # DI
 dagger = "2.50"
@@ -32,6 +35,7 @@ androidx-material = "1.6.2"
 
 #data
 retrofit = "2.9.0"
+roomRuntime = "2.6.1"
 
 # tests
 junit = "4.13.2"
@@ -66,6 +70,8 @@ lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-view
 # compose
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+retrofit-adapters-result = { module = "com.github.skydoves:retrofit-adapters-result", version.ref = "retrofitAdaptersResult" }
+retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
 ui = { group = "androidx.compose.ui", name = "ui" }
 ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -77,6 +83,9 @@ androidx-material = { module = "androidx.compose.material:material", version.ref
 
 #data
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
 
 # tests
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -94,5 +103,6 @@ org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.re
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin-android" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [bundles]
