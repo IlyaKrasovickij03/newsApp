@@ -9,6 +9,7 @@ targetSdk = "34"
 # plugins
 agp = "8.1.2"
 org-jetbrains-kotlin-android = "1.9.10"
+kotlin-serialization-json = "1.6.3"
 
 # DI
 dagger = "2.50"
@@ -28,6 +29,9 @@ composecompiler = "1.5.3"
 activity-compose = "1.8.2"
 compose-bom = "2024.02.01"
 androidx-material = "1.6.2"
+
+#data
+retrofit = "2.9.0"
 
 # tests
 junit = "4.13.2"
@@ -52,6 +56,7 @@ javax-inject = { group = "javax.inject", name = "javax.inject", version = "1" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx_immutable" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization-json" }
 
 # presentation
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
@@ -70,6 +75,9 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-material = { module = "androidx.compose.material:material", version.ref = "androidx-material" }
 
+#data
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+
 # tests
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
@@ -85,5 +93,6 @@ com-android-application = { id = "com.android.application", version.ref = "agp" 
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin-android" }
 
 [bundles]
