@@ -10,7 +10,7 @@ targetSdk = "34"
 
 # plugins
 agp = "8.1.2"
-org-jetbrains-kotlin-android = "1.9.10"
+org-jetbrains-kotlin-android = "1.9.22"
 kotlin-serialization-json = "1.6.3"
 ksp = "1.9.22-1.0.17"
 
@@ -28,7 +28,7 @@ lifecycle-runtime-compose = "2.6.2"
 lifecycle-viewmodel-ktx = "2.6.2"
 
 # compose
-composecompiler = "1.5.3"
+composecompiler = "1.5.10"
 activity-compose = "1.8.2"
 compose-bom = "2024.02.01"
 androidx-material = "1.6.2"
@@ -42,7 +42,7 @@ junit = "4.13.2"
 mockk = "1.13.7"
 kotlinx-coroutines-test = "1.7.3"
 androidx-test-ext-junit = "1.1.5"
-org-jetbrains-kotlin-jvm = "1.8.10"
+org-jetbrains-kotlin-jvm = "1.9.22"
 espresso-core = "3.5.1"
 appcompat = "1.6.1"
 material = "1.11.0"

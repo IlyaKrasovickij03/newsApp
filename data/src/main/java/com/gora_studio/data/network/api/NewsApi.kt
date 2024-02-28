@@ -1,6 +1,6 @@
 package com.gora_studio.data.network.api
 
-import com.gora_studio.data.network.models.Article
+import com.gora_studio.data.network.models.ArticleNetwork
 import com.gora_studio.data.network.models.Response
 import com.gora_studio.data.network.utils.NewsApiKeyInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
@@ -24,7 +24,7 @@ interface NewsApi {
     suspend fun getNewsByHeadlines(
         @Query("q") query: String? = null,
         @Query("country") country: String = "ru"
-    ): Result<Response<Article>>
+    ): Result<Response<ArticleNetwork>>
 }
 
 fun NewsApi(
